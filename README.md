@@ -13,7 +13,7 @@
 <!-- DON'T EDIT THIS SECTION (including comments), INSTEAD RE-RUN `vdoc` TO UPDATE -->
 #### var obj = unflatten(subject, [opts])
 
-Opposite of [`flatten`](#flatten). Unflattens an object with delimited keys
+Opposite of `flatten-obj`. Unflattens an object with delimited keys
 - **subject** (*object*) - Object that needs to be unflattened
 - **[opts]** (*object|string|boolean*) - Optional.
 
