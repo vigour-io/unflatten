@@ -26,7 +26,8 @@
   "homepage": "https://github.com/vigour-io/unflatten#readme",
   "contributors": [
     "Jim De Beer <jim@vigour.io>",
-    "Shawn Inder <shawn@vigour.io>"
+    "Shawn Inder <shawn@vigour.io>",
+    "Michael Hernandez <michael.hernandez1988@gmail.com>"
   ],
   "dependencies": {
     "lodash.set": "^4.3.1",
