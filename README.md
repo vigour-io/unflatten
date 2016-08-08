@@ -17,11 +17,11 @@ Opposite of `flatten-obj`. Unflattens an object with delimited keys
 - **subject** (*object*) - Object that needs to be unflattened
 - **[opts]** (*object|string|boolean*) - Optional.
 
-- Provide a string as a shortcut for `{ separator: opts }`
+- - Provide a string as a shortcut for `{ separator: opts }`
 
-- Provide a boolean as a shorcut for `{ objectMode: opts }`
+- - Provide a boolean as a shorcut for `{ objectMode: opts }`
 
-- Provide an object to set both options `{ separator: '/', objectMode: true }`
+- - Provide an object to set both options `{ separator: '/', objectMode: true }`
 
 - Available options:
 
