@@ -33,7 +33,7 @@ Opposite of `flatten-obj`. Unflattens an object with delimited keys
 <!-- VDOC END -->
 
 ```javascript
-var unflatten = require('unflatten')
+const unflatten = require('unflatten')
 unflatten({
   'a.b.c': 'd'
 })

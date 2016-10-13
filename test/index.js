@@ -1,9 +1,9 @@
 'use strict'
 
-var test = require('tape')
-var unflatten = require('../')
+const test = require('tape')
+const unflatten = require('../')
 
-var testCases = {
+const testCases = {
   separator: '/',
   plain: [
     // ['object', unflattened]
@@ -60,7 +60,7 @@ test('separator shortcut', function (t) {
 test('unflatten with object mode off', function (t) {
   t.plan(testCases.objectModeOff.length * 2)
   testCases.objectModeOff.forEach(function (item) {
-    var unflattened = unflatten(item[0])
+    const unflattened = unflatten(item[0])
     t.deepEqual(unflattened,
       item[1],
       'unflatten(' + JSON.stringify(item[0]) + ') === ' + JSON.stringify(item[1]))
@@ -71,7 +71,7 @@ test('unflatten with object mode off', function (t) {
 test('unflatten with object mode on', function (t) {
   t.plan(testCases.objectModeOn.length * 2)
   testCases.objectModeOn.forEach(function (item) {
-    var unflattened = unflatten(item[0], { objectMode: true })
+    const unflattened = unflatten(item[0], { objectMode: true })
     t.deepEqual(unflattened,
       item[1],
       'unflatten(' + JSON.stringify(item[0]) + ', { objectMode: true }) === ' + JSON.stringify(item[1]))
@@ -82,7 +82,7 @@ test('unflatten with object mode on', function (t) {
 test('object mode shortcut', function (t) {
   t.plan(testCases.objectModeOn.length * 2)
   testCases.objectModeOn.forEach(function (item) {
-    var unflattened = unflatten(item[0], true)
+    const unflattened = unflatten(item[0], true)
     t.deepEqual(unflattened,
       item[1],
       'unflatten(' + JSON.stringify(item[0]) + ', true) === ' + JSON.stringify(item[1]))
