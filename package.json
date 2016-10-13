@@ -1,6 +1,6 @@
 {
   "name": "unflatten",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "The opposite of `flatten`",
   "main": "lib/index.js",
   "scripts": {
