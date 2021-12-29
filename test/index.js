@@ -89,3 +89,10 @@ test('object mode shortcut', function (t) {
     t.equal(unflattened.a instanceof Array, false, 'converts array-like things to objets')
   })
 })
+
+test('prototype pollution', function (t) {
+  const obj = {};
+  t.plan(1)
+  unflatten({ '__proto__.polluted': true })
+  t.deepEqual(obj.polluted, undefined, `unflatten({ '__proto__.polluted': true }) has not polluted the object. obj.polluted === ${obj.polluted}`)
+})
